@@ -7,8 +7,8 @@ const PictureComponent = () => {
         console.log(pictures[picNum]);
         return (
             <div className="pictureContainer" key={picNum}>
-                <div className="author" >{pictures[picNum].userID}</div>
-                <div className="header" >{pictures[picNum].title}</div>
+                <div className="author" >{"Author: " + pictures[picNum].userID}</div>
+                <div className="title" >{"Title: " + pictures[picNum].title}</div>
                 <div className="image" >
                     <img src={pictures[picNum].path} alt={pictures[picNum].title} />
                 </div>
