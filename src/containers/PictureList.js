@@ -5,7 +5,7 @@ import { setPictures } from "../redux/actions/pictureActions";
 import PictureComponent from "./PictureComponent";
 
 const PictureList = () => {
-    const pictures = useSelector((state)=>state);
+    //const pictures = useSelector((state)=>state);
     const dispatch = useDispatch();
     const fetchPictures = async () => {
         const response = await axios.get("http://localhost:3000/data/pictures.json").catch((err) => {
@@ -16,10 +16,9 @@ const PictureList = () => {
     useEffect(() => {
         fetchPictures();
     },[]);
-    //console.log("Pictures: ", pictures);
     return (
-        <div className="container">
-            <div className="header">Lista zdjęć</div>
+        <div className="pictureList container">
+            <div className="pictureList header">Lista zdjęć</div>
             <PictureComponent />
         </div>
     )
