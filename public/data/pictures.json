@@ -1,0 +1,86 @@
+{
+  "0": {
+    "id": 0,
+    "title": "bird0",
+    "userID": "Jarek",
+    "path": "http://localhost:3000/data/50267.png",
+    "isLiked": false
+  },
+  "1": {
+    "id": 1,
+    "title": "bird1",
+    "userID": "Jarek",
+    "path": "http://localhost:3000/data/1045954.png",
+    "isLiked": false
+  },
+  "2": {
+    "id": 2,
+    "title": "bird2",
+    "userID": "Jarek",
+    "path": "http://localhost:3000/data/2046453.png",
+    "isLiked": false
+  },
+  "3": {
+    "id": 3,
+    "title": "bird3",
+    "userID": "Mati",
+    "path": "http://localhost:3000/data/2077219.png",
+    "isLiked": false
+  },
+  "4": {
+    "id": 4,
+    "title": "bird4",
+    "userID": "Mati",
+    "path": "http://localhost:3000/data/2139279.png",
+    "isLiked": false
+  },
+  "5": {
+    "id": 5,
+    "title": "bird5",
+    "userID": "Mati",
+    "path": "http://localhost:3000/data/2295431.png",
+    "isLiked": false
+  },
+  "6": {
+    "id": 6,
+    "title": "bird6",
+    "userID": "Andrzej",
+    "path": "http://localhost:3000/data/2295434.png",
+    "isLiked": false
+  },
+  "7": {
+    "id": 7,
+    "title": "bird7",
+    "userID": "Andrzej",
+    "path": "http://localhost:3000/data/2516641.png",
+    "isLiked": false
+  },
+  "8": {
+    "id": 8,
+    "title": "bird8",
+    "userID": "Jaco",
+    "path": "http://localhost:3000/data/3601194.png",
+    "isLiked": false
+  },
+  "9": {
+    "id": 9,
+    "title": "bird9",
+    "userID": "Jaco",
+    "path": "http://localhost:3000/data/6481346.png",
+    "isLiked": false
+  },
+  "10": {
+    "id": 10,
+    "title": "bird10",
+    "userID": "Mareczek",
+    "path": "http://localhost:3000/data/6983434.png",
+    "isLiked": false
+  },
+  "11": {
+    "id": 11,
+    "title": "bird11",
+    "userID": "Mareczek",
+    "path": "http://localhost:3000/data/7016926.png",
+    "isLiked": false
+  }
+}
