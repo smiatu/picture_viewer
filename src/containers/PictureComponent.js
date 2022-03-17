@@ -1,5 +1,6 @@
 import React from "react";
-import {useSelector} from "react-redux";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const PictureComponent = () => {
     const pictures = useSelector((state) => state.allPictures.pictures);
@@ -7,11 +8,13 @@ const PictureComponent = () => {
         console.log(pictures[picNum]);
         return (
             <div className="pictureContainer" key={picNum}>
-                <div className="author" >{"Author: " + pictures[picNum].userID}</div>
-                <div className="title" >{"Title: " + pictures[picNum].title}</div>
-                <div className="image" >
-                    <img src={pictures[picNum].path} alt={pictures[picNum].title} />
-                </div>
+                <Link to={`/picture/${pictures[picNum].id}`}>
+                    <div className="author" >{"Author: " + pictures[picNum].userID}</div>
+                    <div className="title" >{"Title: " + pictures[picNum].title}</div>
+                    <div className="image" >
+                        <img src={pictures[picNum].path} alt={pictures[picNum].title} />
+                    </div>
+                </Link>
             </div>
         );
     });
