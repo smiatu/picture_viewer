@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import { pictureReducer, selectPicturesReducer } from "./pictureReducer";
+import { pictureReducer, selectedPicturesReducer } from "./pictureReducer";
 
 const reducers = combineReducers({
     allPictures: pictureReducer,
-    picture: selectPicturesReducer,
+    picture: selectedPicturesReducer,
 });
 
 export default reducers;

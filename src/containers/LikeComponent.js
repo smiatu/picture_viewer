@@ -7,19 +7,19 @@ const LikeComponent = () => {
     const { id, isLiked } = picture;
     const dispatch = useDispatch();
 
-    return (
-        <div>
-            {isLiked === false ? (
-                <div>
-                    <button onClick={() => dispatch(likePicture(id))}>Like</button>
-                </div>
-            ) : (
-                <div>
-                    <button onClick={() => dispatch(dislikePicture(id))}>Dislike</button>
-                </div>
-            )}
-        </div>
-    )
+    if(isLiked === false){
+        return (
+            <div>
+                <button onClick={() => dispatch(likePicture(id))}>Like</button>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                <button onClick={() => dispatch(dislikePicture(id))}>Dislike</button>
+            </div>
+        )
+    }
 }
 
 export default LikeComponent;
