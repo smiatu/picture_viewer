@@ -6,7 +6,7 @@ export const setPictures = (pictures) => {
         payload: pictures,
     };
 };
-export const selectPictures = (picture) => {
+export const selectPicture = (picture) => {
     return {
         type: ActionTypes.SELECT_PICTURE,
         payload: picture,

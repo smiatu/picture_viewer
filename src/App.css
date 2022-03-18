@@ -84,4 +84,19 @@ body {
   filter: none;
 }
 
+.likeButton.like button {
+  background: url(./images/like.jpg) no-repeat;
+  background-size: cover;
+}
+.likeButton.dislike button {
+  background: url(./images/dislike.jpg) no-repeat;
+  background-size: cover;
+}
+.likeButton button {
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
 /*# sourceMappingURL=App.css.map */

@@ -12,4 +12,23 @@ export const pictureReducer = (state = initialState, {type, payload}) => {
         default:
             return state;
     }
-}
+};
+
+export const selectedPicturesReducer = (state = {}, {type, payload}) => {
+    switch (type) {
+        case ActionTypes.SELECT_PICTURE:
+            return {...state, ...payload};
+        case ActionTypes.LIKE_PICTURE:
+            return {
+                ...state,
+                isLiked: true,
+            };
+        case ActionTypes.DISLIKE_PICTURE:
+            return {
+                ...state,
+                isLiked: false,
+            };
+        default:
+            return state;
+    }
+};
