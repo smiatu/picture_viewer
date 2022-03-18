@@ -9,14 +9,14 @@ const LikeComponent = () => {
 
     if(isLiked === false){
         return (
-            <div>
-                <button onClick={() => dispatch(likePicture(id))}>Like</button>
+            <div className="likeButton like">
+                <button onClick={() => dispatch(likePicture(id))} />
             </div>
         )
     } else {
         return (
-            <div>
-                <button onClick={() => dispatch(dislikePicture(id))}>Dislike</button>
+            <div className="likeButton dislike">
+                <button onClick={() => dispatch(dislikePicture(id))} />
             </div>
         )
     }
